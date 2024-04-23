@@ -19,17 +19,7 @@ export const HeadSectionsLogo = styled.a`
 `;
 
 export const HeadSectionsLogoColor = styled.span`
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
-    color: var(--text-color);
-    text-decoration: none;
-    @media (min-width:1200px) {
-            font-size: 26px;
-            line-height: 1.19;
-     }
+    color: var(--beckground-color);
 `;
 
 
