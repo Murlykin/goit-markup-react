@@ -5,6 +5,26 @@ export const HeadSections = styled.header`
     color: #ececec;
 `
     ;
+export const HeadConteiner = styled.div`
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    outline: 2px solid var(--technical-color);
+
+    @media screen and (min-width:480px) {
+        width: 480px;
+    }
+    @media screen and (min-width:768px) {
+        min-width: 768px;
+    }
+    @media screen and (min-width:1200px) {
+        min-width: 1200px;
+    }
+`
+    ;
+
 export const HeadSectionsLogo = styled.a`
     font-family: 'Raleway';
     font-weight: 700;
@@ -22,6 +42,19 @@ export const HeadSectionsLogoColor = styled.span`
     color: var(--beckground-color);
 `;
 
+export const HeadMain = styled.div`
+        display: flex;
+    align-items: center;
+
+    padding: 0 15px;
+    // justify-content: space-between;
+    @media(max-width: 767px) {
+        margin-top: 16px;
+        justify-content: space - between;
+        margin-bottom: 16px;
+    }
+
+`;
 
 
 // .conteiner-top {
