@@ -43,14 +43,14 @@ export const HeadSectionsLogoColor = styled.span`
 `;
 
 export const HeadMain = styled.div`
-        display: flex;
+    display: flex;
     align-items: center;
 
     padding: 0 15px;
     // justify-content: space-between;
     @media(max-width: 767px) {
         margin-top: 16px;
-        justify-content: space - between;
+        justify-content: space-between;
         margin-bottom: 16px;
     }
 

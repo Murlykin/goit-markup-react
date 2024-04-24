@@ -7,12 +7,6 @@
   font-family: 'Roboto';
   src: url("./Fonts/Roboto/Roboto-Regular.ttf") format('ttf');
 }
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
 html {
   box-sizing: border-box;
 }
@@ -64,7 +58,6 @@ body {
   color: var(--text-color-p);
   background-color: var(--body-background-color);
 }
-
 html[data-theme='dark'] {
   --body-background-color: #121212;
   --texst-color: #ffffff;
