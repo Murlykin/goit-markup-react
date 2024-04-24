@@ -94,6 +94,4 @@ html[data-theme='light'] {
   --icone-color: #afb1b8;
   --icone-bg-color: #f5f4fa;
   --timing-functione: cubic-bezier(0.4, 0, 0.2, 1);
-
-  /* --technical-color: tomato; */
 }
