@@ -33,21 +33,8 @@ export const AuthSiteItams = styled.li`
     @media(max-width: 767px) {
         display: none;
     }
-    &:after {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    content: '';
-    display: block;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: var(--beckground-color);
-    opacity: 0;
-    margin-bottom: -1px;
-    transition: opacity 250ms var(--timing-functione);}
-        &:hover{
-    color: var(--beckground-color);  }
+
+
 `
     ;
 export const AuthContakt = styled.a`
@@ -63,7 +50,8 @@ export const AuthContakt = styled.a`
     align-content: center;
     padding-top: 32px;
     padding-bottom: 32px;
-  
+    &:hover{
+    color: var(--beckground-color);  }
     @media screen and(min-width: 1200px) {
         padding-top: 32px;
         padding-bottom: 32px;
