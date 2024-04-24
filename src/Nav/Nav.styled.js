@@ -73,9 +73,12 @@ export const NavSiteLink = styled.a`
         padding-top: 32px;
         padding-bottom: 32px;
     }
+
+
+
     &:hover{
-    color: var(--beckground-color);  }
-    &:after {
+    color: var(--beckground-color); 
+    &:after{
     position: absolute;
     left: 0;
     bottom: 0;
@@ -83,17 +86,32 @@ export const NavSiteLink = styled.a`
     display: block;
     width: 100%;
     height: 4px;
-    border-radius: 2px;
+    border-ra1dius: 2px;
     background-color: var(--beckground-color);
-    opacity: 0;
-    margin-bottom: -1px;
-    transition: opacity 250ms var(--timing-functione);}
-} 
+    opacity: 1;
+    margin-bottom: -2px;
+    transition: opacity 250ms var(--timing-functione);} 
+}
+
 `
     ;
 
 export const NavSiteLinkAkcent = styled.a`
-    color: var(--beckground - color);
+
+    color: var(--beckground-color);
+    &:after{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-ra1dius: 2px;
+    background-color: var(--beckground-color);
+    opacity: 1;
+    margin-bottom: -2px;
+    transition: opacity 250ms var(--timing-functione);} 
 `
     ;
 
@@ -137,22 +155,7 @@ export const  AuthSiteItams = styled.li`
     @media(max-width: 767px) {
         display: none;
     }
-    &:after {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    content: '';
-    display: block;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: var(--beckground-color);
-    opacity: 0;
-    margin-bottom: -1px;
-     opacity: 1;
-    transition: opacity 250ms var(--timing-functione);}
-        &:hover{
-    color: var(--beckground-color);  }
+
 `
     ;
 export const AuthContakt = styled.a`
