@@ -16,9 +16,6 @@ const HederSection = () => {
 </HeaderConteiner>
 </HeaderSection>
 
-
-
-
     );
 };
 export default HederSection;

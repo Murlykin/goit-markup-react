@@ -1,6 +1,7 @@
 import './App.css'
 import HeadSection from './Head/index'
 import HederSection from './Header/index'
+import SectiOn from './Section/index'
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
     <>
       <HeadSection />
       <HederSection />
+      <SectiOn />
     </>
   )
 }
