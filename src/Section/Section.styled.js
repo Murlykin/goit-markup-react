@@ -51,7 +51,6 @@ export const SectionD = styled.ul`
             display: flex;
             flex-wrap: wrap;
             margin: 0 0 -30px -30px;
-            list-style: none;
         }
 
     @media screen and (min-width:1200px) {
@@ -60,6 +59,7 @@ export const SectionD = styled.ul`
 
         }
     padding: 0px;
+    list-style: none;
 
 `;
 
@@ -68,6 +68,7 @@ export const SectionDIrems = styled.li`
             flex-basis: calc(100% / 2 - 30px);
             margin-left: 30px;
             margin-bottom: 30px;
+            list-style: none;
             }
         @media screen and (min-width:1200px) {
             flex-basis: calc(100% / 4 - 30px);
