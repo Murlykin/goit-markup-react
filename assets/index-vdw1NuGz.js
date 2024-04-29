@@ -465,7 +465,6 @@ Error generating stack: `+i.message+`
             display: flex;
             flex-wrap: wrap;
             margin: 0 0 -30px -30px;
-            list-style: none;
         }
 
     @media screen and (min-width:1200px) {
@@ -474,12 +473,14 @@ Error generating stack: `+i.message+`
 
         }
     padding: 0px;
+    list-style: none;
 
 `,$r=D.li`
         @media screen and (min-width:768px) {
             flex-basis: calc(100% / 2 - 30px);
             margin-left: 30px;
             margin-bottom: 30px;
+            list-style: none;
             }
         @media screen and (min-width:1200px) {
             flex-basis: calc(100% / 4 - 30px);
