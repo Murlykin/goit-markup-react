@@ -3,8 +3,21 @@ import {
 } from "./Section.styled";
 import Icon from '../images/icons.svg';
 // import ContactCenter from "../images/";
+// import { WOW } from 'wowjs'
 
 const SectiOn = () => {
+// componentDidMount() {
+//     const wow = new WOW({
+//         offset: 100,
+//         mobile: false,
+//         live: true
+//     })
+
+//     wow.init();
+// }
+
+ 
+
     return (
         <Section>
             <SectionConteiner>

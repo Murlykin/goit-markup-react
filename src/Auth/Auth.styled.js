@@ -9,7 +9,7 @@ export const AuthNav = styled.ul`
     margin: 0;
     margin-left: auto;
     transition: color 250ms var(--timing-functione), fill 250ms var(--timing-functione);
-    & .site - nav__items: not(: last-child) {
+    &:last-child {
         margin-right: 50px;
     }
     @media(min - width: 768px) {
