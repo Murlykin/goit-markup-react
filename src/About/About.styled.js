@@ -1,18 +1,32 @@
 import styled from "@emotion/styled";
 
 export const SectionAbout = styled.section`
-    // padding-top: 60px;
-        padding-bottom: 60px;
-            padding-bottom: 0px;
-    padding: 0px;
-    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 0;
+    @media (max-width:768px) {
+    padding-bottom: 0px;
+    }
+
+
+
+
+
+    // // padding-top: 60px;
+    //     padding-bottom: 60px;
+    //         padding-bottom: 0px;
+    // padding: 0px;
+    // list-style: none;
     // display: inline-block;
     margin: 0 0.5rem;
     animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 5s; /* don't forget to set a duration! */
-    }
+    // }
     @media (min-width:1200px) {
-            padding-top: 94px;
+            // padding-top: 94px;
             margin-bottom: 60px;
         }
 `;
@@ -33,6 +47,9 @@ export const AboutConteiner = styled.div`
   @media screen and (min-width: 1200px) {
     min-width: 1200px;
   }
+      @media screen and (max-width:1200px) {
+        display: none;
+    }
 `;
 
 export const AboutTitle = styled.h2`

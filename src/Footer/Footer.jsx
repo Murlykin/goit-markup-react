@@ -70,7 +70,7 @@ const FooterSections = () => {
                 <FooterTitle>Підпишіться на розсилку</FooterTitle>
                     <FootersubskribeForm>
                         <Footersubskribe>
-                            <label for="mail"></label>
+                            <label for="email"></label>
                             <FootersubskribeFormImput type="email" name="mail" id="mail" placeholder="E-mail" />
                             <FootersubskribeButton type="submit">Підписатися
                                 <FootersubskribeSvg width="24" height="24">

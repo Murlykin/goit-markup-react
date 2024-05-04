@@ -38,7 +38,7 @@ export const AuthSiteItams = styled.li`
 `
     ;
 export const AuthContakt = styled.a`
-    font-family: 'Roboto', sans-serif;  
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;

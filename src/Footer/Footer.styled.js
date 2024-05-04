@@ -98,7 +98,7 @@ export const FooterAdd = styled.div`
 `;
 
 export const FooterTitle = styled.h2`
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -156,6 +156,8 @@ export const FooterLinksSvg = styled.svg`
     fill: #ffffff;
 `;
 export const Footersubskribe = styled.div`
+// display: flex;
+
         @media screen and (min-width:1200px) {
             display: flex;
     }
@@ -168,7 +170,7 @@ export const FootersubskribeConteiner = styled.div`
     }
 `;
 export const FootersubskribeForm = styled.form`
-    display: flex;
+
 `;
 export const FootersubskribeFormImput = styled.input`
     min-width: 100%;
