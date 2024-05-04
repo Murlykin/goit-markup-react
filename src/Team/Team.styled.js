@@ -146,6 +146,7 @@ export const TeamsLinks = styled.a`
     &:hover,
     &:focus {
     background-color: var(--beckground-color);
+    fill: var(--body-background-color);
 `;
 export const TeamsSvg = styled.svg`
   &:hover,
