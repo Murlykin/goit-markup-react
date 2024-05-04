@@ -13,7 +13,7 @@ import Mykhailo from "../images/ui-mobile.jpg";
 const TeamSection = () => {
     return (
         <SectionTeam>
-            <TeamConteiner>
+            <TeamConteiner class="animate__animated animate__fadeInUp wow" data-wow-offset="100">
                 <TeamTitle>Наша команда</TeamTitle>
                 <TeamD>
                     <TeamsDIrems>

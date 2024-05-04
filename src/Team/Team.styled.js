@@ -69,10 +69,10 @@ export const TeamD = styled.ul`
   padding: 0px;
   list-style: none;
   display: inline-block;
-  margin: 0 0.5rem;
-  animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 3s; /* don't forget to set a duration! */
-  animate__fast: 800ms;
+  // margin: 0 0.5rem;
+  // animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
+  // animation-duration: 3s; /* don't forget to set a duration! */
+  // animate__fast: 800ms;
 `;
 export const TeamsDIrems = styled.li`
         @media screen and (min-width:768px) {
