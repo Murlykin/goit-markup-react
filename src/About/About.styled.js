@@ -24,7 +24,7 @@ export const SectionAbout = styled.section`
     margin: 0 0.5rem;
     animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 5s; /* don't forget to set a duration! */
-    // }
+  
     @media (min-width:1200px) {
             // padding-top: 94px;
             margin-bottom: 60px;
