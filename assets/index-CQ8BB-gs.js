@@ -150,7 +150,7 @@ Error generating stack: `+o.message+`
     width: 18.67px;
     height: 18.67px;
 
-`,M="/goit-markup-react/assets/icons-WWKJvoXN.svg",wm=()=>u.jsxs(u.Fragment,{children:[u.jsx(pm,{type:"button",children:u.jsx(hm,{width:"24",height:"12",children:u.jsx("use",{href:M+"#icon-menu"})})}),u.jsx(mm,{children:u.jsx(gm,{children:u.jsx(vm,{children:u.jsx(ym,{children:u.jsx(xm,{children:u.jsx("use",{href:M+"#icon-close-menu"})})})})})})]}),km=j.ul`
+`,M="/goit-markup-react/assets/icons-WWKJvoXN.svg",wm=()=>u.jsxs(u.Fragment,{children:[u.jsx(pm,{type:"button",class:"js-open-menu",children:u.jsx(hm,{width:"24",height:"12",children:u.jsx("use",{href:M+"#icon-menu"})})}),u.jsx(mm,{children:u.jsx(gm,{children:u.jsx(vm,{children:u.jsx(ym,{children:u.jsx(xm,{children:u.jsx("use",{href:M+"#icon-close-menu"})})})})})})]}),km=j.ul`
     display: flex;
 
     // margin-left: 93px;
