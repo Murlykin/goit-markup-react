@@ -19,7 +19,7 @@ const HeadSection = () => {
             <HeadMain>
             <HeadSectionsLogo href="index.html" lang="en" data-wow-offset="100">
             <HeadSectionsLogoColor>Web</HeadSectionsLogoColor >Studio</HeadSectionsLogo>
-                    <> <NavSection /> <AuthSection /></> <MobilMenu />
+                    <> <NavSection /> <AuthSection /></> <MobilMenu id="js-menu-container"/>
 
                 </HeadMain>
             </HeadConteiner>

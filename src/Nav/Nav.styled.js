@@ -1,16 +1,16 @@
 import styled from '@emotion/styled';
 export const NavSections = styled.ul`
     display: flex;
+gap:40px;
 
     // margin-left: 93px;
     list-style: none;
-// margin-left: -50px;
+    text-align: left;
+    margin-left: -50px;
     transition: color 250ms var(--timing-functione), fill 250ms var(--timing-functione);
-    & .site - nav__items: not(: last-child) {
-        margin-right: 50px;
-    }
-    @media(min - width: 768px) {
-        margin- eft: 88px;
+
+    @media(min-width: 768px) {
+        margin-left: 88px;
     }
     @media(max-width: 767px) {
         display: none;
@@ -19,13 +19,13 @@ export const NavSections = styled.ul`
     ;
 export const NavSiteItams = styled.li`
     display: flex;
-    margin-left: 93px;
-    transition: color 250ms var(--timing - functione), fill 250ms var(--timing - functione);
+    // margin-left: 93px;
+    transition: color 250ms var(--timing-functione), fill 250ms var(--timing - functione);
     &:not:last-child {
         margin-right: 50px;
     }
     @media(min-width: 768px) {
-        margin-left: 88px;
+        // margin-left: 88px;
     }
     @media(max-width: 767px) {
         display: none;

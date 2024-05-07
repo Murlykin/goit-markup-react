@@ -3,6 +3,7 @@ export const HeadSections = styled.header`
     background-color: var(--body-background-color);
     border-bottom: 1px solid;
     color: #ececec;
+    padding: 0;
 `
     ;
 export const HeadConteiner = styled.div`
@@ -49,9 +50,7 @@ export const HeadSectionsLogoColor = styled.span`
 export const HeadMain = styled.div`
     display: flex;
     align-items: center;
-
     padding: 0 15px;
-    // justify-content: space-between;
     @media(max-width: 767px) {
         margin-top: 16px;
         justify-content: space-between;

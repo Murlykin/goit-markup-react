@@ -44,6 +44,15 @@ export const Mobil = styled.div`
 
 `
     ;
+export const MobilOpen = styled.div`
+    opacity: 1;
+    visibility: visible;
+    pointer - events: auto;
+
+`
+    ;
+
+
 export const MobilMConteiner = styled.div`
     position: relative;
     display: flex;

@@ -1,6 +1,6 @@
 import {
-    MobilButton, MobilButtonSvg, Mobil, MobilConteiner, MobilButtonClose, MobilMConteiner, MobilButtonIcons
-
+    MobilButton, MobilButtonSvg, Mobil, MobilConteiner, MobilButtonClose, MobilMConteiner, MobilButtonIcons,
+    MobilOpen 
 
 } from "./Mobil.styled";
 import Icon from '../images/icons.svg';
@@ -9,13 +9,13 @@ import Icon from '../images/icons.svg';
 
 const MobilMenu = () => {
     return (<>
-        <MobilButton type="button" class="js-open-menu">
+        <MobilButton type="button" id="js-open-menu">
             <MobilButtonSvg width="24" height="12">
                 <use href={Icon + '#icon-menu'}></use>
             </MobilButtonSvg>
        </MobilButton>
 
-        <Mobil>
+        <Mobil><MobilOpen >
           <MobilMConteiner>
             <MobilConteiner>
               <MobilButtonClose>
@@ -67,7 +67,7 @@ const MobilMenu = () => {
 
 
             </MobilConteiner>
-          </MobilMConteiner>
+          </MobilMConteiner></MobilOpen>
         </Mobil>
     </>
     );

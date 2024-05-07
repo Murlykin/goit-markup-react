@@ -20,7 +20,7 @@ const AuthSection = () => {
                 <AuthContakt href="tel:+380961111111">
                     <AuthSvg width="12" height="16">
                     <use href={Icon + '#smartphone'}></use>
-                    </AuthSvg>  +38 096 111 11 11</AuthContakt>
+                    </AuthSvg>+38 096 111 11 11</AuthContakt>
             </AuthSiteItams>
         </AuthNav>
     );

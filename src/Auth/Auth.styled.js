@@ -2,43 +2,35 @@ import styled from '@emotion/styled';
 
 
 export const AuthNav = styled.ul`
-    display: flex;
-    margin-left: 93px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    display: none;
     margin-left: auto;
-    transition: color 250ms var(--timing-functione), fill 250ms var(--timing-functione);
-    &:last-child {
-        margin-right: 50px;
-    }
-    @media(min - width: 768px) {
-        margin- eft: 88px;
-    }
-    @media(max-width: 767px) {
-        display: none;
-    }
-`
-    ;
-export const AuthSiteItams = styled.li`
-    display: flex;
-    margin-left: 93px;
-    transition: color 250ms var(--timing - functione), fill 250ms var(--timing - functione);
-    &:last-child {
-        margin - right: 50px;
-    }
-    @media(min-width: 768px) {
-        margin-left: 88px;
-    }
-    @media(max-width: 767px) {
-        display: none;
+    //  padding-right: 15px;   
+    @media screen and (min-width:1200px) {
+    padding-right: 15px;
     }
 
+
+        @media screen and (min-width:768px) {
+            display: block;
+             margin-top: 10px;
+            
+        }
+    
+        @media screen and (min-width:1200px) {
+            display: flex;
+        }
+`
+
+
+
+export const AuthSiteItams = styled.li`
+    display: flex;
+    align-content: center;
 
 `
     ;
 export const AuthContakt = styled.a`
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;  
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -46,17 +38,23 @@ export const AuthContakt = styled.a`
     text-decoration: none;
     color: var(--text-color-p);
     position: relative;
+    // display: block;
     display: flex;
     align-content: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    //  margin-bottom: 10px;
+    // padding-top: 32px;
+   
     &:hover{
-    color: var(--beckground-color);  }
+    color: var(--beckground-color); 
+    fill: var(--beckground-color); }
     @media screen and(min-width: 1200px) {
         padding-top: 32px;
         padding-bottom: 32px;
     }
-
+    @media(min-width: 768px) {
+        margin-left: 48px;
+        padding-bottom: 10px;
+    }
 `
     ;
 
