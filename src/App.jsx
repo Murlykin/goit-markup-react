@@ -1,26 +1,18 @@
 import './App.css'
-import HeadSection from './Head/index'
-import HederSection from './Header/index'
-import SectiOn from './Section/index'
-import AboutSection from './About/index'
-import TeamSection from './Team/index'
-import ClientSection from './Clients/index'
-import FooterSections from './Footer/index'
+import { Route, Routes } from 'react-router-dom';
+import { routes } from "./routes";
+import  Home  from './pages/Home';
+import  Porfolio  from "./pages/portfolio";
 
-function App() {
-
-
+export const App = () => {
   return (
     <>
-      <HeadSection />
-      <HederSection />
-      <SectiOn />
-      <AboutSection />
-      <TeamSection />
-      <ClientSection />
-      <FooterSections />
+      <Routes>
+        <Route path={routes.HOME} element={<Home />} />
+        <Route path={routes.PORTFOLIO} element={<Porfolio />} />
+      </Routes>
     </>
-  )
-}
+  );
+};
 
 export default App

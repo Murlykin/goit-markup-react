@@ -1,4 +1,6 @@
 import styled from '@emotion/styled';
+import { NavLink } from "react-router-dom";
+
 export const NavSections = styled.ul`
     display: flex;
 gap:40px;
@@ -56,7 +58,7 @@ export const NavSiteItams = styled.li`
 
 
 
-export const NavSiteLink = styled.a`
+export const NavSiteLink = styled(NavLink)`
     font-family: 'Roboto', sans-serif; 
     font-weight: 500;
     font-size: 14px;
