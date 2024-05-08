@@ -338,7 +338,7 @@ gap:40px;
         padding-bottom: 32px;
     }
 }
-`;const fg=()=>{const e=Mn();return u.jsxs(cg,{children:[u.jsx(no,{children:u.jsx(ro,{href:"/",children:u.jsx(dg,{children:"Студія"})})}),u.jsx(no,{children:u.jsx(ro,{to:"/portfolio",state:{from:e},children:"Портфоліо"})}),u.jsx(no,{children:u.jsx(ro,{href:"#",children:"Контакти"})})]})},pg=E.ul`
+`;const fg=()=>{const e=Mn();return u.jsxs(cg,{children:[u.jsx(no,{children:u.jsx(ro,{to:"/",state:{from:e},children:u.jsx(dg,{children:"Студія"})})}),u.jsx(no,{children:u.jsx(ro,{to:"/portfolio",state:{from:e},children:"Портфоліо"})}),u.jsx(no,{children:u.jsx(ro,{href:"#",children:"Контакти"})})]})},pg=E.ul`
     display: none;
     margin-left: auto;
     //  padding-right: 15px;   
