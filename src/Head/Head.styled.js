@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { NavLink } from "react-router-dom";
 export const HeadSections = styled.header`
     background-color: var(--body-background-color);
     border-bottom: 1px solid;
@@ -26,7 +27,7 @@ export const HeadConteiner = styled.div`
 `
     ;
 
-export const HeadSectionsLogo = styled.a`
+export const HeadSectionsLogo = styled(NavLink)`
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 24px;
