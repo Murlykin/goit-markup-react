@@ -3,9 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export const NavSections = styled.ul`
     display: flex;
-gap:40px;
-
-    // margin-left: 93px;
+    gap:40px;
     list-style: none;
     text-align: left;
     margin-left: -50px;
@@ -44,7 +42,6 @@ export const NavSiteItams = styled.li`
     background-color: var(--beckground-color);
     opacity: 0;
     margin-bottom: -1px;
-   
     transition: opacity 250ms var(--timing-functione);
     }
     
@@ -53,10 +50,6 @@ export const NavSiteItams = styled.li`
     }
 `
     ;
-
-
-
-
 
 export const NavSiteLink = styled(NavLink)`
     font-family: 'Roboto', sans-serif; 
@@ -70,14 +63,10 @@ export const NavSiteLink = styled(NavLink)`
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-
     @media screen and(min - width: 1200px) {
         padding-top: 32px;
         padding-bottom: 32px;
     }
-
-
-
     &:hover{
     color: var(--beckground-color); 
     &:after{
@@ -123,28 +112,9 @@ export const AuthNav = styled.div`
     list-style: none;
     padding: 0;
     margin: 0;   
-    // @media screen and(min-width: 1200px) {
-    //     padding - right: 15px;
-    // }
-
-    // &:not(:first-child) {
-    //     @media screen and(min- width: 1200px) {
-    //         margin-left: 50px;
-    //         margin-top: 0px;
-    //     }
-    // }
-    // @media screen and(min-width: 768px) {
-    //     display: block;
-    //     margin-top: 10px;
-
-    // }
-
-    // @media screen and(min-width: 1200px) {
-    //     display: flex;
-    }
 `
     ;
-export const  AuthSiteItams = styled.li`
+export const AuthSiteItams = styled.li`
     display: flex;
     margin-left: 93px;
     transition: color 250ms var(--timing - functione), fill 250ms var(--timing - functione);

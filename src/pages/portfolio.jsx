@@ -1,4 +1,4 @@
-import HeadSection from '../Head/index'
+import PortfolioSection from '../HeadPortfolio/index'
 import { Suspense } from 'react';
 import FooterSections from '../Footer/index'
 import { Outlet } from 'react-router-dom';
@@ -6,7 +6,7 @@ import { Outlet } from 'react-router-dom';
 const Porfolio = () => {
     return (
         <>
-            <HeadSection />
+            <PortfolioSection />
 <>ПРИВЕТ</>
             <FooterSections />
         
