@@ -1,5 +1,5 @@
 import './App.css'
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Navigate  } from 'react-router-dom';
 import { routes } from "./routes";
 import  Home  from './pages/Home';
 import  Porfolio  from "./pages/portfolio";
@@ -10,6 +10,7 @@ export const App = () => {
       <Routes>
         <Route path={routes.HOME} element={<Home />} />
         <Route path={routes.PORTFOLIO} element={<Porfolio />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </>
   );
