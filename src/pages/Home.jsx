@@ -4,7 +4,7 @@ import SectiOn from '../Section/index'
 import AboutSection from '../About/index'
 import TeamSection from '../Team/index'
 import ClientSection from '../Clients/index'
-import FooterSections from '../Footer/index'
+// import FooterSections from '../Footer/index'
 
 
 const Home = () => {
@@ -16,7 +16,7 @@ const Home = () => {
             <AboutSection />
             <TeamSection />
             <ClientSection />
-            <FooterSections />
+            {/* <FooterSections /> */}
         
         </>
     );

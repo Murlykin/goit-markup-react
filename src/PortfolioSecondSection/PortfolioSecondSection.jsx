@@ -19,12 +19,7 @@ const PortfolioSecondSections = () => {
     return (
 <>
         <PorUlEleven>
-            <PorfolioLi>
-                <PorfolioCardDecor src={Desktop}>
-                <PorfolioDiscript>
-                
-                  <img src={Desktop} alt="ноутбук" />
-                
+            <PorfolioLi><PorfolioDiscript>
                 <PorfolioParagraf>
                   <PorfolioCard>
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -34,11 +29,16 @@ const PortfolioSecondSections = () => {
                   </PorfolioCard>
                 </PorfolioParagraf>
               </PorfolioDiscript>
+                <PorfolioCardDecor src={Desktop}>
+                
+                
+                  <img src={Desktop} alt="ноутбук" />
+
               <PorfolioCards>
                 <PorfolioCardTitle>Технокряк</PorfolioCardTitle>
                 <PorfolioCardText>Веб-сайт</PorfolioCardText>
-              </PorfolioCards>
-            </PorfolioCardDecor >
+              </PorfolioCards>    </PorfolioCardDecor >             
+           
           </PorfolioLi>
 
           <PorfolioLi>
