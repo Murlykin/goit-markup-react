@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-// import { NavLink } from "react-router-dom";
+
 export const PorUlEleven = styled.ul`
     list-style: none;
     padding: 0;
@@ -30,48 +30,10 @@ export const PorfolioLi = styled.li`
             flex-basis: calc(100% / 3 -30px);
         }
 `;
-export const PorfolioDiscript= styled.div`
-    position: relative;
-    overflow: hidden;
-`;
-export const PorfolioParagraf = styled.div`
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(33, 150, 243, 0.9);
-    padding: 0 24px;
-    height: 100%;
-    width: 100%;
-    transition: transform 250ms var(--timing-functione);
-    transform: translateY(101%);
 
-    @media screen and(min-width: 768px) {
-        align-items: center;
-    }
-
-`;
-
-export const PorfolioCard= styled.p`
-    margin: 0;
-    color: var(--body-background-color);
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-
-    &:hover,
-    &:focus {
-    transform: translateY(0);
-    opacity: 1;
-} 
-
-`;
 export const PorfolioCards = styled.div`
     display: block;
     padding: 24px 20px;
-    // margin-top: 0;
-    // margin-bottom: 0;
     outline: 2px solid var(--technical-color);
     border-left: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
@@ -83,17 +45,16 @@ export const PorfolioCardTitle = styled.h2`
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: $text-c;
     margin-top: 0px;
     margin-bottom: 4px;
     color: var(--text-color);
 `;
 export const PorfolioCardText = styled.p`
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
+ 
+    font-size: 16px;
+    line-height: 1.8;
     letter-spacing: 0.06em;
-    color: $text-c;
+    color: var(--text-color-p);
     margin-top: 0px;
     margin-bottom: 4px;
 `;

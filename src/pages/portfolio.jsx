@@ -16,8 +16,6 @@ const Porfolio = () => {
         <PortfolioSecondSections />
         </PortConteiner>
       </Section>
-      {/* <FooterSections /> */}
-
 
       <Suspense fallback={<div>Loading page...</div>}>
         <Outlet />
