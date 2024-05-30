@@ -12,7 +12,8 @@ const HederSection = () => {
           Ефективні рішення для <br />
           вашого бізнесу
         </HeaderText>
-        <HeaderButton type="button" data-modal-open>Замовити послугу</HeaderButton>
+          <HeaderButton type="button" id="data-modal-open">Замовити послугу</HeaderButton>
+
 </HeaderConteiner>
 </HeaderSection>
 

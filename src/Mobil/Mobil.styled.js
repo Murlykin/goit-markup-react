@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-
+import { NavLink } from "react-router-dom";
 export const MobilButton = styled.button`
     display: inline-flex;
     margin: 0;
@@ -87,6 +87,44 @@ export const MobilButtonIcons = styled.svg`
     height: 18.67px;
 
 `
+export const MobilLinc = styled(NavLink)`
+  display: block;
+  color: vap(--text-color);
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: color 250ms var(--timing-functione);
+
+  &:hover,
+  &:focus,
+  &.current {
+    color: var(--beckground-color);
+  }
+`
+
+// .mobile - site - nav__link {
+//     display: block;
+//     color: $text - c;
+//     font - weight: 500;
+//     font - size: 40px;
+//     line - height: 1.17;
+//     letter - spacing: 0.02em;
+//     text - decoration: none;
+//     transition: color 250ms var(--timing - functione);
+
+//   &: hover,
+//   &: focus,
+//   &.current {
+//         color: var(--beckground - color);
+//     }
+// }
+
+
+
+
+
 // .main - nav__mobile - menu.is - open {
 //     opacity: 1;
 //     visibility: visible;
