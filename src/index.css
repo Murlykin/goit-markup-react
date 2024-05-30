@@ -260,7 +260,7 @@ body {
 }
 
 .mobile-soshmed__item:last-child .mobile-soshmed__link {
-  border-right: none;
+  border-right: none; 
 }
 
 .mobile-soshmed__link {
