@@ -16,7 +16,7 @@ const HeadSection = () => {
             <HeadMain>
             <HeadSectionsLogo to="/" state={{ from: location }} lang="en" data-wow-offset="100">
             <HeadSectionsLogoColor>Web</HeadSectionsLogoColor >Studio</HeadSectionsLogo>
-                    <> <NavSection /> <AuthSection /></> <MobilMenu id="js-menu-container"/>
+                    <> <NavSection /> <AuthSection /></> <MobilMenu/>
 
                 </HeadMain>
             </HeadConteiner>

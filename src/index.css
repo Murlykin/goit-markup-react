@@ -190,6 +190,7 @@ body {
 .mobile-site-nav {
   margin-bottom: auto;
   list-style: none;
+  padding-left: 10px;
 }
 
 .mobile-site-nav__items {
@@ -219,6 +220,7 @@ body {
 
 .mobile-auth-nav {
   list-style: none;
+  padding-left: 10px;
 }
 
 .mobile-auth-nav__link {
@@ -250,6 +252,7 @@ body {
 .mobile-soshmed {
   display: flex;
   flex-wrap: wrap;
+  padding-left: 10px;
 }
 
 .mobile-soshmed__item:first-child .mobile-soshmed__link {
@@ -571,7 +574,7 @@ Sidebar navigation
   background: var(--body-background-color);
   left: 0;
   width: 0;
-  padding-left: 10px;
+  /* padding-left: 10px; */
   margin-top: 380px;
   overflow: hidden;
   /* height: 850px; */
