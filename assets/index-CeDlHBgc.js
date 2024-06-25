@@ -364,8 +364,7 @@ gap:40px;
 
         @media screen and (min-width:768px) {
             display: block;
-             margin-top: 10px;
-            
+            margin-top: 10px;
         }
     
         @media screen and (min-width:1200px) {
@@ -394,7 +393,7 @@ gap:40px;
     color: var(--beckground-color); 
     fill: var(--beckground-color); }
     @media screen and(min-width: 1200px) {
-        padding-top: 32px;
+        padding-top: 42px;
         padding-bottom: 32px;
     }
     @media(min-width: 768px) {
