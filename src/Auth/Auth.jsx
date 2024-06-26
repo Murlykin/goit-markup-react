@@ -10,11 +10,12 @@ const AuthSection = () => {
 
         <AuthNav>
             <AuthSiteItams>
-                <AuthContakt href="mailto:info@devstudio.com">
-                    <AuthSvg width="16" height="12">
+                <AuthSvg width="16" height="12">
                     <use href={Icon + '#poshta'}></use>
-                    </AuthSvg>    
-                    info@devstudio.com</AuthContakt>
+                </AuthSvg>
+                <AuthContakt href="mailto:info@devstudio.com">info@devstudio.com</AuthContakt>
+
+                    
             </AuthSiteItams>
             <AuthSiteItams>
                 <AuthContakt href="tel:+380961111111">

@@ -12,8 +12,7 @@ export const AuthNav = styled.ul`
 
         @media screen and (min-width:768px) {
             display: block;
-             margin-top: 10px;
-            
+            margin-top: 10px;
         }
     
         @media screen and (min-width:1200px) {
@@ -24,11 +23,26 @@ export const AuthNav = styled.ul`
 
 
 export const AuthSiteItams = styled.li`
-    display: flex;
-    align-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover, 
+  &:focus {
+    color: var(--beckground-color);
+    fill: var(--beckground-color);
+  }
+  @media screen and(min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  @media (min-width: 768px) {
+    margin-left: 48px;
+    padding-bottom: 10px;
+  }
+`;
 
-`
-    ;
+
+    
 export const AuthContakt = styled.a`
     font-family: 'Roboto', sans-serif;  
     font-weight: 500;
@@ -47,17 +61,9 @@ export const AuthContakt = styled.a`
     &:hover{
     color: var(--beckground-color); 
     fill: var(--beckground-color); }
-    @media screen and(min-width: 1200px) {
-        padding-top: 32px;
-        padding-bottom: 32px;
-    }
-    @media(min-width: 768px) {
-        margin-left: 48px;
-        padding-bottom: 10px;
-    }
-`
-    ;
 
+    ;
+`
 export const AuthSvg = styled.svg`
     margin-right: 10px;
 }
