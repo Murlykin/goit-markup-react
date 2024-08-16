@@ -790,6 +790,10 @@ gap:40px;
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
+  padding: 0 0 20px 0;
+  list-style: none;
+  // display: inline-block;
+
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -801,9 +805,7 @@ gap:40px;
     display: flex;
     flex-wrap: wrap;
   }
-  padding: 0px;
-  list-style: none;
-  display: inline-block;
+
   // margin: 0 0.5rem;
   // animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
   // animation-duration: 3s; /* don't forget to set a duration! */
