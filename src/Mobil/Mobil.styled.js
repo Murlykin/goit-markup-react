@@ -47,7 +47,7 @@ export const Mobil = styled.div`
 export const MobilOpen = styled.div`
     opacity: 1;
     visibility: visible;
-    pointer - events: auto;
+    pointer-events: auto;
 
 `
     ;
@@ -104,20 +104,20 @@ export const MobilLinc = styled(NavLink)`
   }
 `
 
-// .mobile - site - nav__link {
+// .mobile-site-nav__link {
 //     display: block;
-//     color: $text - c;
-//     font - weight: 500;
-//     font - size: 40px;
-//     line - height: 1.17;
-//     letter - spacing: 0.02em;
-//     text - decoration: none;
-//     transition: color 250ms var(--timing - functione);
+//     color: $text-c;
+//     font-weight: 500;
+//     font-size: 40px;
+//     line-height: 1.17;
+//     letter-spacing: 0.02em;
+//     text-decoration: none;
+//     transition: color 250ms var(--timing-functione);
 
 //   &: hover,
 //   &: focus,
 //   &.current {
-//         color: var(--beckground - color);
+//         color: var(--beckground-color);
 //     }
 // }
 
@@ -125,10 +125,10 @@ export const MobilLinc = styled(NavLink)`
 
 
 
-// .main - nav__mobile - menu.is - open {
+// .main-nav__mobile-menu.is-open {
 //     opacity: 1;
 //     visibility: visible;
-//     pointer - events: auto;
+//     pointer-events: auto;
 // }
 
 // .mobile - menu__conteiner {

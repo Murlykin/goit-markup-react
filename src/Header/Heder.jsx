@@ -3,6 +3,9 @@ HeaderConteiner, HeaderText, HeaderButton
 } from "./Heder.styled";
 // import Icon from '../images/icons.svg'; 
 // import ContactCenter from "../images/";
+// import Modal from "../Modal/index"
+
+
 
 const HederSection = () => {
     return (
@@ -13,7 +16,7 @@ const HederSection = () => {
           вашого бізнесу
         </HeaderText>
           <HeaderButton type="button" id="data-modal-open">Замовити послугу</HeaderButton>
-
+{/* <Modal/> */}
 </HeaderConteiner>
 </HeaderSection>
 
