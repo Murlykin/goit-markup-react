@@ -153,7 +153,7 @@ Error generating stack: `+o.message+`
 `;w.div`
     opacity: 1;
     visibility: visible;
-    pointer - events: auto;
+    pointer-events: auto;
 
 `;w.div`
     position: relative;
