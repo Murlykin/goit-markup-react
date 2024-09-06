@@ -130,4 +130,5 @@ const HederSection = () => {
         </HeaderSection>
     );
 };
+
 export default HederSection;
