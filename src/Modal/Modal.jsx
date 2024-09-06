@@ -1,6 +1,17 @@
 import Icon from '../images/icons.svg';
 
+import { useState } from 'react';
+import './Modal.css'; // Импортируем стили для модального окна
+
 const Modal = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const toggleModal = () => {
+    setIsModalOpen(prevState => !prevState);
+  };
+
+
+
     return (
         <>
             <div className="backdrop is-hidden" data-modal>
@@ -91,7 +102,7 @@ const Modal = () => {
                             Відправити
                         </button>
 
-                        <button type="button" className="modal__close" data-modal-close>
+                        <button type="button" className="modal__close" data-modal-close onClick={toggleModal}>
                             <svg className="modal__img" width="18" height="18">
                                 <use href={Icon + '#icon-close-black'}></use>
                              

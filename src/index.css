@@ -161,13 +161,12 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
- 
 }
 
 .mobile-menu__close-button {
   position: absolute;
   top: -25px;
-  right: -255px;
+  right: -25px;
   background-color: transparent;
   border: 0;
   padding: 0;
@@ -185,14 +184,12 @@ body {
 }
 
 .mobile-site-nav__conteiner {
-  margin-bottom: 0;
-    padding-left: 30px;
+  margin-bottom: auto;
 }
 
 .mobile-site-nav {
   margin-bottom: auto;
   list-style: none;
-  padding-left: 10px;
 }
 
 .mobile-site-nav__items {
@@ -201,7 +198,7 @@ body {
 
 .mobile-site-nav__link {
   display: block;
-  color: vap(--text-color);
+  /* color: $text-c; */
   font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
@@ -222,7 +219,6 @@ body {
 
 .mobile-auth-nav {
   list-style: none;
-  padding-left: 30px;
 }
 
 .mobile-auth-nav__link {
@@ -254,7 +250,6 @@ body {
 .mobile-soshmed {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 10px;
 }
 
 .mobile-soshmed__item:first-child .mobile-soshmed__link {
@@ -262,7 +257,7 @@ body {
 }
 
 .mobile-soshmed__item:last-child .mobile-soshmed__link {
-  border-right: none; 
+  border-right: none;
 }
 
 .mobile-soshmed__link {
@@ -292,7 +287,7 @@ body {
 .main-nav__button {
   display: inline-flex;
   margin: 0;
-  padding: 0 10px;
+  padding: 0;
   border: none;
   background-color: transparent;
   line-height: 0;
@@ -310,6 +305,7 @@ body {
     }
   }
 }
+
 
 
 
@@ -507,7 +503,7 @@ body {
 
 .dek {
   color: var(--beckground-color);
-
+padding-left: 5px;
   &:focus,
   &:hover {
     text-decoration: none;
@@ -541,25 +537,6 @@ body {
   }
 }
 
-
-/* srdfgh */
-
-
-/*==========================
-Sidebar navigation
-========================*/
-/* .navbar {
-  position: relative;
-} */
-
-/* button {
-  cursor: pointer;
-  background: transparent;
-  ;
-  border: none;
-  font-size: 20px;
-} */
-
 .navbar .toggle {
   position: fixed;
   left: 30px;
@@ -576,7 +553,6 @@ Sidebar navigation
   background: var(--body-background-color);
   left: 0;
   width: 0;
-  /* padding-left: 10px; */
   margin-top: 380px;
   overflow: hidden;
   height: 850px;
@@ -584,7 +560,6 @@ Sidebar navigation
   z-index: 9;
 
   box-shadow: 0 10px 15px -3px rgb(46 41 51 / 8%), 0 4px 6px -2px rgb(71 63 79 / 16%);
-  /* transform: translateX(-100px); */
   transition: transform ease-in-out 0.2s;
  
 }

@@ -1,49 +1,68 @@
-// import Icon from '../images/icons.svg';
-import { useState, useRef, useEffect } from 'react';
-import { MdClose } from 'react-icons/md';
-import { FiMenu } from 'react-icons/fi';
-import { MobilLinc } from "./Mobil.styled";
-import {  useLocation } from "react-router-dom";
+import { useState, useEffect } from 'react';
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock';
+import Icon from '../images/icons.svg';
 
-  const MobilMenu = () => {
-    const [navbarOpen, setNavbarOpen] = useState(false);
-    const location = useLocation();
-          const ref = useRef();
+const MobilMenu = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   useEffect(() => {
-    const handler = (event) => {
-      if (
-        navbarOpen &&
-        ref.current &&
-        !ref.current.contains(event.target)
-      ) {
-        setNavbarOpen(false);
+    // Управляем атрибутом aria-expanded и классом is-open
+    const openMenuBtn = document.querySelector('.js-open-menu');
+    openMenuBtn.setAttribute('aria-expanded', isMenuOpen);
+
+    const mobileMenu = document.querySelector('.js-menu-container');
+    if (isMenuOpen) {
+      mobileMenu.classList.add('is-open');
+      disableBodyScroll(document.body);
+    } else {
+      mobileMenu.classList.remove('is-open');
+      enableBodyScroll(document.body);
+    }
+
+    // Слушаем изменение ширины экрана
+    const mediaQuery = window.matchMedia('(min-width: 768px)');
+    const handleMediaChange = (e) => {
+      if (e.matches) {
+        mobileMenu.classList.remove('is-open');
+        openMenuBtn.setAttribute('aria-expanded', false);
+        enableBodyScroll(document.body);
+        setIsMenuOpen(false);
       }
     };
-    document.addEventListener('mousedown', handler);
-      
-  }, [navbarOpen]);
-    return (<>
-<nav ref={ref} className="navbar">
-      <button className="main-nav__button " onClick={() => setNavbarOpen((prev) => !prev)}>
-      {navbarOpen ? (
-    <MdClose style={{ width: '32px', height: '32px' }} />
-  ) : (
-    <FiMenu className="main-nav__icone--menu"
-      style={{ width: '32px', height: '32px', }} />
-  )}
-      </button>
-    
-      <div className={`menu-nav${navbarOpen ? ' show-menu ' : ''}`}>
-        
+    mediaQuery.addEventListener('change', handleMediaChange);
+
+    // Убираем слушатель при размонтировании компонента
+    return () => {
+      mediaQuery.removeEventListener('change', handleMediaChange);
+    };
+  }, [isMenuOpen]);
+
+
+  return (<>
+        <button type="button" className="main-nav__button js-open-menu" aria-expanded="false" onClick={toggleMenu}>
+          <svg width="24" height="16" aria-label="перемикач мобільного меню">
+            <use className="main-nav__icone--menu" href={Icon + '#icon-menu'}></use>
+          </svg>
+    </button>
+
+        <div className="main-nav__mobile-menu js-menu-container">
           <div className="mobile-menu__conteiner">
             <div className="mobile-site-nav__conteiner">
-
+              <button className="mobile-menu__close-button js-close-menu" onClick={toggleMenu}>
+            <svg className="mobile-menu__close-icone">
+              <use className="main-nav__icone--menu" href={Icon + '#icon-close-menu'}></use>
+            </svg>
+              </button>
               <ul className="mobile-site-nav">
                 <li className="mobile-site-nav__items">
-                  <MobilLinc to="/" state={{ from: location }}>Студія</MobilLinc>
+                  <a href="./index.html" className="mobile-site-nav__link ">Студія</a>
                 </li>
                 <li className="mobile-site-nav__items">
-                  <MobilLinc to="/portfolio" state={{ from: location }}>Портфоліо</MobilLinc>
+                  <a href="./portfolio.html" className="mobile-site-nav__link mobile-site-nav__link--current">Портфоліо</a>
                 </li>
                 <li className="mobile-site-nav__items">
                   <a href="" className="mobile-site-nav__link">Контакти</a>
@@ -76,8 +95,7 @@ import {  useLocation } from "react-router-dom";
               </ul>
             </div>
           </div>
-        </div>        
-      </nav>
+        </div>
     </>
     );
 };

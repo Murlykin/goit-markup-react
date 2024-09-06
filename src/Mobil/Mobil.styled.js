@@ -8,7 +8,7 @@ export const MobilButton = styled.button`
     background-color: transparent;
     line-height: 0;
 
-  @media screen and (min-width:768px) {
+    @media screen and (min-width:768px) {
     display: none;
     position: absolute;
     top: 100%;
